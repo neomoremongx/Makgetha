@@ -89,11 +89,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <div style="font-weight: 600; color: #cda670; width: 140px; flex-shrink: 0; font-family: Georgia, serif;">Service Needed:</div>
                             <div style="color: #333333; flex: 1;">' . htmlspecialchars($service) . '</div>
                         </div>
-                        
-                        <div style="display: flex; margin-bottom: 0; padding: 10px 0;">
-                            <div style="font-weight: 600; color: #cda670; width: 140px; flex-shrink: 0; font-family: Georgia, serif;">Submitted:</div>
-                            <div style="color: #333333; flex: 1;">' . date('F j, Y \a\t g:i A') . '</div>
-                        </div>
                     </div>
                     
                     <!-- Message Section -->
@@ -241,7 +236,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 } else {
     // If not a POST request, redirect to contact page
-    header("Location: contact.html");
+    header("Location: /Makgetha/contact");
     exit;
 }
 ?>
