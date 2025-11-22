@@ -221,7 +221,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "
         <script> 
          alert('Thank you " . htmlspecialchars($name) . "! Your consultation request has been sent successfully. We will contact you shortly.');
-         document.location.href = 'contact.html';
+         document.location.href = '/contact';
         </script>
         ";
         
@@ -230,7 +230,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "
         <script> 
          alert('Sorry, there was an error sending your consultation request. Please try again or contact us directly at 079 582 3164.');
-         document.location.href = 'contact.html';
+         document.location.href = '/contact';
         </script>
         ";
     }
@@ -241,3 +241,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 ?>
+
